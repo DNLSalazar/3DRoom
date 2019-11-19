@@ -18,12 +18,14 @@ body {
 }
 
 #container {
+  --Ydeg: 0deg;
+  --Xdeg: 0deg;
   position: relative;
   
   transform-style: preserve-3d;
   width: 500px;
   height: 500px;
-  transform: translateZ(500px) rotateY(90deg);
+  transform: translateZ(500px) rotateY(var(--Ydeg)) rotateX(var(--Xdeg));
   overflow: visible;
 }
 
